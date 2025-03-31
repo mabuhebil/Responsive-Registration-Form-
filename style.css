@@ -40,7 +40,7 @@ body{
     margin: 20px 0;
     display: flex;
     flex-direction: column;
-    row-gap: 5px;
+    row-gap: 10px;
 }
 .container .form  .form-input input{
     position: relative;
@@ -55,6 +55,31 @@ body{
 .container .form  .column{
     display: flex;
     column-gap: 25px;
+}
+
+.Gander .Gander-box{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;   
+}
+.Gander .Gander-box .Gander-box-items{
+    display: flex;
+    justify-content: space-around;
+
+}
+.Gander .Gander-box h3{
+    margin-left: -6px;
+    width: 100%;
+    text-align: center;
+}
+.Gander .Gander-box .Gander-box-item{
+    display: flex;
+    column-gap: 10px;
+}
+@media screen and (max-width:500px) {
+    .container .form  .column{
+        flex-wrap: wrap;
+    }
 }
 
 
