@@ -40,7 +40,7 @@ body{
     margin: 20px 0;
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 11px;
 }
 .container .form  .form-input input{
     position: relative;
@@ -52,6 +52,9 @@ body{
     padding: 5px 8px;
     font-size: 1rem;
 }
+.container .form  .form-input input:focus{
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
 .container .form  .column{
     display: flex;
     column-gap: 25px;
@@ -61,6 +64,10 @@ body{
     display: flex;
     flex-direction: column;
     row-gap: 15px;   
+    margin-top: 15px;
+}
+.Gander input{
+    accent-color: rgb(130,106,251);
 }
 .Gander .Gander-box .Gander-box-items{
     display: flex;
@@ -71,15 +78,75 @@ body{
     margin-left: -6px;
     width: 100%;
     text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 .Gander .Gander-box .Gander-box-item{
     display: flex;
     column-gap: 10px;
 }
+.address{
+    margin-top: 35px;
+}
+.address h3{
+    font-weight: 500;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+.select-box select{
+    position: relative;
+    width: 101.2%;
+    height: 3.2rem;
+    outline: none;
+    border: 0.5px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 5px 8px;
+    font-size: 1rem;
+    color: #707070;
+    
+}
+.select-box{
+    display: flex;
+    column-gap: 10px;
+}
+.select-box input{
+    margin-right: -9.5px;
+}
+.inputs{
+    display: flex;
+    column-gap: 10px;
+    margin-right: -9.5px;
+}
+button{
+    position: relative;
+    width: 101.2%;
+    height: 3.2rem;
+    outline: none;
+    border: 0.5px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 5px 8px;
+    font-size: 1rem;
+    color: #707070;
+    background-color: rgb(130,106, 251) ;
+    color: white;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: rgb(88, 56, 250);
+    cursor: pointer;
+}
 @media screen and (max-width:500px) {
     .container .form  .column{
         flex-wrap: wrap;
     }
+    .Gander .Gander-box .Gander-box-items{
+        display: flex;
+        column-gap: 10px;
+        flex-wrap: wrap;
+    }
+  
 }
 
 
